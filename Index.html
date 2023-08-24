@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> HTML (HyperText Markup Language)</title>
+</head>
+<body>
+    <h1 id="inicio"><mark>Módulo 1 - Primeiros Passos com HTML</mark></h1>
+    <hr />
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#history">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#basic">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#tags">Outras Tags</a></li>
+        <li><a href="#ref">Links de referências</a></li>
+    </ul>
+    <h3 id="history">História dos Computadores</h3>
+
+    <p>A história dos computadores é uma jornada fascinante que remonta a séculos atrás e é marcada por avanços revolucionários na tecnologia. Tudo começou com dispositivos mecânicos simples, como a "Máquina Analítica" concebida por Charles Babbage no século XIX, que é considerada o precursor do computador moderno. 
+    No entanto, foi somente durante a Segunda Guerra Mundial que os primeiros computadores eletrônicos começaram a surgir.</p>
+    <p> O ENIAC, concluído em 1945, foi um marco nesse sentido, sendo o primeiro computador eletrônico de grande escala. Ele ocupava um grande espaço e era usado principalmente para cálculos científicos e militares.
+    A década de 1950 viu o surgimento dos computadores de segunda geração, que utilizavam transistores em vez de válvulas, tornando-os mais rápidos, confiáveis e menores em tamanho. Essa evolução continuou com a chegada da terceira geração, na década de 1960, com a invenção dos circuitos integrados, que permitiram uma maior integração de componentes em um único chip.</p>
+    <p>A década de 1970 testemunhou o nascimento da revolução pessoal dos computadores, com empresas como a Apple e a Microsoft lançando computadores voltados para uso doméstico. A quarta geração trouxe os microprocessadores, permitindo que os computadores pessoais se tornassem mais acessíveis e populares. A evolução não parou por aí. A quinta geração viu o desenvolvimento 
+    de tecnologias avançadas de processamento, como a Inteligência Artificial e o processamento paralelo. A partir dos anos 2000, assistimos à proliferação da computação em nuvem, que permitiu armazenamento e acesso remoto a dados e serviços.</p>
+    <p>Hoje, a história dos computadores nos trouxe a um ponto em que dispositivos extremamente poderosos e portáteis são uma parte essencial
+    de nossas vidas. A busca por maior poder de processamento, eficiência energética e inovações contínuas continua a moldar o futuro dos computadores, influenciando uma ampla gama de setores, desde a medicina até a exploração espacial e muito mais. </p>
+    <small><a href="#inicio">(voltar)</a></small>
+    
+    <h3 id="clients">O que são <i>Clients</i></h3>
+
+    <p>Clients é nada menos que os usuarios eles são os que consome as informações fornecidas pelos Servers. Basicamente eles acessam através de um computador, smartphone, tablet, entre outros a internet.
+       No contexto da web, um "cliente" geralmente se refere a um software (como um navegador da web) que solicita e exibe páginas da web a partir de servidores da web. Em outras palavras, os navegadores
+       da web são os "clientes" que interpretam e renderizam o código <strong><abbr title="Hypertext Markup Language">HTML</abbr></strong> enviado pelo servidor, para que os usuários possam visualizar e interagir com o conteúdo da página.</p>
+       <small><a href="#inicio">(voltar)</a></small>
+
+    <h3 id="servers">O que são <i>Servers</i>?</h3>
+
+    <p>No contexto da web, a palavra "servers" refere-se a servidores. Um servidor é um computador ou sistema de computadores que fornece serviços, recursos ou dados para outros dispositivos ou sistemas, geralmente chamados de "clientes". Na arquitetura cliente-servidor, os clientes solicitam serviços ou recursos aos servidores, que respondem às solicitações, entregando os dados necessários.</p>
+    <p>Na web, os servidores desempenham um papel fundamental no armazenamento e fornecimento de páginas da web, arquivos, aplicativos e outros conteúdos para os navegadores dos usuários. Quando você digita um URL em seu navegador ou clica em um link, o navegador envia uma solicitação para o servidor correspondente, que então processa a solicitação e envia os dados necessários de volta ao navegador para exibição.</p>
+    <p>Os servidores web são uma classe específica de servidores que hospedam sites e aplicativos web. Eles estão configurados para atender a solicitações HTTP <u>(Hypertext Transfer Protocol)</u> e podem hospedar diferentes tipos de conteúdo, como páginas HTML, imagens, arquivos de estilo, scripts, vídeos e muito mais. Além disso, existem outros tipos de servidores que desempenham funções específicas,
+    como servidores de banco de dados, servidores de e-mail, servidores de arquivos, servidores de aplicativos, entre outros.</p>
+    <p>Em resumo, no linguajar da web, os "servers" são os computadores ou sistemas que fornecem serviços e conteúdo aos usuários, cumprindo um papel essencial na entrega de informações e funcionalidades que fazem a internet funcionar.</p>
+    <small><a href="#inicio">(voltar)</a></small>
+
+     <h3 id="basic">Como é uma estrutura básica de um HTML?</h3>
+     <p>Uma estrutura básica de um documento HTML (Hypertext Markup Language) inclui elementos essenciais que fornecem a estrutura e o conteúdo da página da web.</p>
+     <p>Aqui está um exemplo simples de uma estrutura básica de HTML:</p>
+        <ul> 
+            <li>&lt;!DOCTYPE html&gt;: Isso define o tipo de documento como HTML5, que é a versão mais recente do HTML.;</li>
+            <li>&lt;html&gt;: Este é o elemento raiz de um documento HTML. Todos os outros elementos da página estão contidos dentro deste elemento.</li>
+            <li>&lt;head&gt;: Esta seção contém informações sobre o documento, como metadados, links para folhas de estilo (CSS) e scripts. No exemplo acima, definimos o conjunto de caracteres como UTF-8 e o título da página.</li>
+            <li>&lt;meta charset="UTF-8"&gt;: Isso especifica o conjunto de caracteres (codificação) utilizado no documento. UTF-8 é uma codificação que suporta vários caracteres de diferentes idiomas.</li>
+            <li>&lt;title&gt;: Aqui você define o título da página, que é exibido na barra de título do navegador ou na guia da página.</li>
+            <li>&lt;body&gt;: Esta é a parte do documento que contém o conteúdo visível da página, como texto, imagens, links e outros elementos.</li>
+            <li>&lt;h1&gt;: Este é um cabeçalho de nível 1, que geralmente é usado para o título principal da página. Existem outros níveis de cabeçalhos, como &lt;h2&gt;, &lt;h3&gt; ... &lt;h6&gt;.</li>
+            <li>&lt;p&gt;: Este é um elemento de parágrafo que é usado para criar parágrafos de texto.</li>
+        </ul>
+        <small><a href="#inicio">(voltar)</a></small>
+        
+    <h3 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h3>
+    <h4>Listas Ordenadas (&lt;ol&gt;):</h4>
+    <p>As listas ordenadas são utilizadas quando você quer criar uma sequência de itens que devem ser numerados ou ter algum tipo de identificador alfanumérico. Cada item da lista é definido usando o elemento &lt;li&gt;. O navegador automaticamente enumera os itens em ordem crescente.</p>
+    <p>Isso será renderizado como:</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>item 2</li>
+    </ol>
+    <h4>Listas Não Ordenadas (&lt;ul&gt;):</h4>
+   <p>As listas não ordenadas são usadas para criar uma sequência de itens que não precisam ser numerados em ordem específica. Os itens são normalmente marcados com pontos, mas você pode estilizá-los usando CSS para usar diferentes tipos de marcadores.</p>
+   <p>Isso será renderizado como:</p>
+   <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+   </ul>
+   <p>Ambos os tipos de lista são úteis para diferentes tipos de conteúdo e formatação, dependendo do seu design. A escolha entre lista ordenada e não ordenada depende do contexto do seu documento e de como você deseja apresentar os itens aos seus usuários.</p>
+   <small><a href="#inicio">(voltar)</a></small>
+
+   <h3 id="tags">Outras <i>Tags</i></h3>
+   <p>Aqui está mais algumas tags que são bastante interesantes para ultilizar em uma pagina.</p>
+   <ul>
+        <li>&lt;font&gt;: Essa tag costumava ser usada para definir a fonte, tamanho e cor do texto em uma página. No entanto, ela está obsoleta desde o HTML5 e não deve ser mais usada. Em vez disso, recomenda-se utilizar CSS para estilizar o texto.</li>
+        <li>&lt;del&gt;: Essa tag é usada para marcar parte do texto como deletado, o que é frequentemente exibido com uma linha de texto tachada (riscada). É útil para mostrar alterações em documentos ou versões antigas. Por exemplo:</li>
+        <br>
+        <img src="del.png" alt="Exemplo del" width="500">
+        <p><u><i>O resultado é:</i></u></p>
+        <p><p>Este é um <del>texto antigo</del> texto novo.</p>
+        <li>&lt;abbr&gt;: A tag <abbr> é usada para definir uma abreviação ou sigla, e normalmente inclui um atributo "title" que fornece a expansão completa do termo quando o usuário passa o cursor sobre a abreviação. Isso ajuda a explicar o significado de siglas ou termos abreviados. Por exemplo:</li>
+        <br>
+        <img src="abbr.png" alt="Exemplo abbr" width="500">
+        <p><u><i>O resultado é:</i></u></p>
+        <p>HTML significa <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
+        <li>A tag HTML &lt;blockquote&gt; é usada para destacar uma seção de texto que é uma citação retirada de outra fonte. Ela é frequentemente usada para indicar que um bloco de texto é uma citação de um autor ou fonte externa. O navegador normalmente renderiza o texto dentro de uma tag &lt;blockquote&gt; com uma formatação especial, como um recuo nas margens esquerda e direita, para diferenciá-lo do restante do conteúdo. Aqui está um exemplo de como a tag &lt;blockquote&gt; pode ser usada:</li>
+        <br>
+        <img src="blockquote.jpg" alt="Exemplo blockquote" width="500" height="100">
+        <p>Nesse exemplo, o texto entre as tags &lt;blockquote&gt; e &lt;/blockquote&gt; é considerado uma citação, e o navegador pode aplicar uma formatação padrão para indicar que se trata de uma citação. O &lt;footer&gt; dentro do bloco &lt;blockquote&gt; é usado para fornecer informações adicionais sobre a citação, como o autor.</p>
+        <p><u><i>O resultado é:</i></u></p>
+        <p><blockquote>
+            <p>“A simplicidade é o último grau de sofisticação.”</p>
+            <footer>Leonardo da Vinci</footer>
+          </blockquote>
+          </p>
+    </p>
+   </ul>
+   <small><a href="#inicio">(voltar)</a></small>
+
+   <h5 id="ref">Links de referências</h5>
+   <ul>
+        <li><a href="https://www.dio.me/" target="_blank">dio.me</a></li>
+        <li><a href="https://www.w3schools.com" target="_blank">W3Schools.com!</a> </li>
+        <li><a href="https://www.instagram.com/diogomainardes.dev/?hl=pt-br" target="_blank">Profressor</a></li>
+</ul>
+<small><a href="#inicio">(voltar)</a></small>
+
+</body>
+</html>
